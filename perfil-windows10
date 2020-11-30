@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update && sudo apt install -y gettext libgettextpo-dev gnome-shell-extensions gnome-tweak-tool gnome-menus gir1.2-gmenu-3.0 thunar &&
-sudo wget https://www.dropbox.com/s/ikkq4nxmq2cp3d8/theme-windows10.zip && sudo unzip theme-windows10.zip &&
+sudo wget https://www.dropbox.com/s/ikkq4nxmq2cp3d8/theme-windows10.zip && sudo unzip -p theme-windows10.zip &&
 
 sudo useradd windows10 -mUG lp,cdrom -s /bin/bash && sudo passwd -d windows10 &&
 sudo mkdir -p /home/windows10/{Escritorio,Documentos,Descargas,Imágenes,Música,Vídeos,Plantillas,Público} &&
