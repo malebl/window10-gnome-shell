@@ -1,11 +1,11 @@
 #!/bin/bash
 
 sudo apt update && sudo apt install -y gettext libgettextpo-dev gnome-shell-extensions gnome-tweak-tool gnome-menus gir1.2-gmenu-3.0 thunar &&
-wget https://www.dropbox.com/s/ikkq4nxmq2cp3d8/theme-windows10.zip && unzip theme-windows10.zip &&
+sudo wget https://www.dropbox.com/s/ikkq4nxmq2cp3d8/theme-windows10.zip && sudo unzip theme-windows10.zip &&
 
-useradd windows10 -mUG lp,cdrom -s /bin/bash && passwd -d windows10 &&
-mkdir -p /home/windows10/{Escritorio,Documentos,Descargas,Imágenes,Música,Vídeos,Plantillas,Público} &&
-mv .config /home/windows10/.config && mv .icons /home/windows10/.icons && mv .local /home/windows10/.local && mv .themes /home/windows10/.themes &&
-chown -R windows10:windows10 /home/windows10 &&
+sudo useradd windows10 -mUG lp,cdrom -s /bin/bash && sudo passwd -d windows10 &&
+sudo mkdir -p /home/windows10/{Escritorio,Documentos,Descargas,Imágenes,Música,Vídeos,Plantillas,Público} &&
+sudo mv .config /home/windows10/.config && sudo mv .icons /home/windows10/.icons && sudo mv .local /home/windows10/.local && sudo mv .themes /home/windows10/.themes &&
+sudo chown -R windows10:windows10 /home/windows10 &&
 
-rm theme-windows10.zip .config .icons .local .themes
+sudo rm theme-windows10.zip
